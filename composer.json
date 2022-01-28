@@ -1,5 +1,5 @@
 {
-    "name": "lumnn/sagepay-pi",
+    "name": "dhaval/sagepay-pi",
     "description": "Opayo PI (formerly SagePay PI) PHP API that uses PSR7, PSR17, PSR18 standards.",
     "type": "library",
     "autoload": {
