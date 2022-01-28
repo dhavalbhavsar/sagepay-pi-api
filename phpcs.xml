@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ruleset name="Comink">
+    <description>Project Standards</description>
+    <rule ref="./vendor/escapestudios/symfony2-coding-standard/Symfony/ruleset.xml"/>
+
+    <rule ref="Symfony.Commenting.FunctionComment.SpacingAfterParamName">
+        <severity>0</severity>
+    </rule>
+    <rule ref="Symfony.Commenting.FunctionComment.SpacingAfterParamType">
+        <severity>0</severity>
+    </rule>
+</ruleset>

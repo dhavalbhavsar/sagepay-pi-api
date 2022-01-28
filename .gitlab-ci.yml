@@ -1,0 +1,33 @@
+stages:
+  - install
+  - test
+
+install:
+  stage: install
+  image:
+    name: composer
+  cache:
+    key: php
+    paths:
+      - vendor
+  script:
+    - composer install
+    - PHP_CS_FIXER_IGNORE_ENV=1 composer run lint
+  only:
+    - master
+    - merge_requests
+  artifacts:
+    untracked: true
+
+test:
+  stage: test
+  image: php
+  script:
+    - pecl install xdebug
+    - php -dzend_extension=xdebug -dxdebug.mode=coverage vendor/bin/phpunit --colors=never --coverage-text --coverage-cobertura coverage_cobertura.xml
+  artifacts:
+    reports:
+      cobertura: coverage_cobertura.xml
+  only:
+    - master
+    - merge_requests

@@ -1,0 +1,11 @@
+/coverage
+/vendor
+/index.php
+/composer.lock
+
+.phpunit.result.cache
+.php-cs-fixer.cache
+
+/.php_cs.cache
+*.sublime-*
+.idea

@@ -1,0 +1,48 @@
+{
+    "name": "lumnn/sagepay-pi",
+    "description": "Opayo PI (formerly SagePay PI) PHP API that uses PSR7, PSR17, PSR18 standards.",
+    "type": "library",
+    "autoload": {
+        "psr-4": { "Lumnn\\SagePayPi\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Lumnn\\SagePayPi\\Tests\\": "tests/" }
+    },
+    "keywords": ["opayo", "sagepay", "opayo pi", "sagepay pi", "api", "payment"],
+    "license": "MIT",
+    "homepage": "https://gitlab.com/lumnn/sagepay-pi",
+    "authors": [
+        {
+            "name": "Kamil",
+            "email": "lumnn@mailfence.com"
+        }
+    ],
+    "scripts": {
+        "fix-code": "php-cs-fixer fix",
+        "php-cs-fixer": "php-cs-fixer fix --dry-run --verbose",
+        "lint": [
+            "@php-cs-fixer",
+            "phpstan",
+            "psalm"
+        ],
+        "test": "phpunit"
+    },
+    "require": {
+        "php": ">=7.4",
+        "psr/http-client": "^1.0",
+        "psr/http-client-implementation": "^1.0",
+        "psr/http-factory-implementation": "^1.0",
+        "psr/http-message": "^1.0",
+        "psr/http-message-implementation": "^1.0",
+        "php-http/discovery": "^1.14"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.2",
+        "guzzlehttp/guzzle": "^7.4",
+        "guzzlehttp/psr7": "^2.1",
+        "php-http/curl-client": "^2.2",
+        "phpstan/phpstan": "^1.0",
+        "phpunit/phpunit": "^9.5",
+        "vimeo/psalm": "^4.11"
+    }
+}
