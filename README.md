@@ -19,7 +19,7 @@ Issue with error resolve with response error.
 
 ## Installation
 
-`composer require lumnn/sagepay-pi`
+`composer require dhavalsagepaypi/sagepay-pi`
 
 You'll also need packages providing:
 
