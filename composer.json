@@ -44,7 +44,5 @@
         "phpstan/phpstan": "^1.0",
         "phpunit/phpunit": "^9.5",
         "vimeo/psalm": "^4.11"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
