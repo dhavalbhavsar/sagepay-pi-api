@@ -28,7 +28,7 @@
         "test": "phpunit"
     },
     "require": {
-        "php": ">=7.4",
+        "php": ">=7.3",
         "psr/http-client": "^1.0",
         "psr/http-client-implementation": "^1.0",
         "psr/http-factory-implementation": "^1.0",
